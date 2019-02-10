@@ -32,7 +32,7 @@ WImage.addCreator(function copyCreator({x = 0, y = 0, width, height, image} = {}
     }
     ctx.putImageData(d, 0, 0);
 });
-WImage.addCreator(function mathCreator({x = 0, y = 0, width, height, image, math} = {}) {
+WImage.addCreator(function mathCreator({x = 0, y = 0, width, height, math} = {}) {
     let {width: cw, height: ch} = this.canvas();
     width = width || cw;
     height = height || ch;

@@ -68,9 +68,7 @@ WImage.addFilter(function greyMaxFilter() {
         _ref4$sw = _ref4.sw,
         sw = _ref4$sw === undefined ? this.canvas().width : _ref4$sw,
         _ref4$sh = _ref4.sh,
-        sh = _ref4$sh === undefined ? this.canvas().height : _ref4$sh,
-        _ref4$type = _ref4.type,
-        type = _ref4$type === undefined ? "r" : _ref4$type;
+        sh = _ref4$sh === undefined ? this.canvas().height : _ref4$sh;
 
     var d = this.data();
     var ctx = this.canvas().getContext("2d");
@@ -91,9 +89,7 @@ WImage.addFilter(function greyAverageFilter() {
         _ref5$sw = _ref5.sw,
         sw = _ref5$sw === undefined ? this.canvas().width : _ref5$sw,
         _ref5$sh = _ref5.sh,
-        sh = _ref5$sh === undefined ? this.canvas().height : _ref5$sh,
-        _ref5$type = _ref5.type,
-        type = _ref5$type === undefined ? "r" : _ref5$type;
+        sh = _ref5$sh === undefined ? this.canvas().height : _ref5$sh;
 
     var d = this.data();
 

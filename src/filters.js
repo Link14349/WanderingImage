@@ -25,7 +25,7 @@ WImage.addFilter(function greyComponentFilter({ x = 0, y = 0, sw = this.canvas()
     }, { x: x, y: y, sw: sw, sh: sh });
     ctx.putImageData(d, 0, 0);
 });
-WImage.addFilter(function greyMaxFilter({ x = 0, y = 0, sw = this.canvas().width, sh = this.canvas().height, type = "r" } = {}) {
+WImage.addFilter(function greyMaxFilter({ x = 0, y = 0, sw = this.canvas().width, sh = this.canvas().height } = {}) {
     let d = this.data();
     let ctx = this.canvas().getContext("2d");
     this.echo(function (j, i, p) {
@@ -36,7 +36,7 @@ WImage.addFilter(function greyMaxFilter({ x = 0, y = 0, sw = this.canvas().width
     }, { x: x, y: y, sw: sw, sh: sh });
     ctx.putImageData(d, 0, 0);
 });
-WImage.addFilter(function greyAverageFilter({ x = 0, y = 0, sw = this.canvas().width, sh = this.canvas().height, type = "r" } = {}) {
+WImage.addFilter(function greyAverageFilter({ x = 0, y = 0, sw = this.canvas().width, sh = this.canvas().height } = {}) {
     let d = this.data();
     let {width, height} = this.canvas();
     let ctx = this.canvas().getContext("2d");

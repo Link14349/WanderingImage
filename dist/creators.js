@@ -66,7 +66,6 @@ WImage.addCreator(function mathCreator() {
         y = _ref3$y === undefined ? 0 : _ref3$y,
         width = _ref3.width,
         height = _ref3.height,
-        image = _ref3.image,
         math = _ref3.math;
 
     var _canvas3 = this.canvas(),
